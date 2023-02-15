@@ -12,7 +12,7 @@ namespace BMICalculator
 
             while (option != 6)
             {
-                Console.Clear();// okokok
+                Console.Clear();
                 switch (language)
                 {
                     case "English":
@@ -24,7 +24,6 @@ namespace BMICalculator
                         Console.WriteLine("5. Display average BMI");
                         Console.WriteLine("6. Exit");
                         break;
-
                     case "Polski":
                         Console.WriteLine("Kalkulator BMI");
                         Console.WriteLine("1. Zmień język");
