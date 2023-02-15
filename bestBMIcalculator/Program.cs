@@ -16,7 +16,7 @@ namespace BMICalculator
                 switch (language)
                 {
                     case "English":
-                        Console.WriteLine("BMI Calculator");
+                        Console.WriteLine("BMI Calculator");// komentarz
                         Console.WriteLine("1. Change language");
                         Console.WriteLine("2. Add new person");
                         Console.WriteLine("3. Display person with lowest BMI");
