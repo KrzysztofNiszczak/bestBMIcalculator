@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace BMICalculator
 {
@@ -37,7 +38,18 @@ namespace BMICalculator
 
                 Console.WriteLine();
                 Console.Write("Choose an option: ");
-                option = Convert.ToInt32(Console.ReadLine());
+
+                string inputFromUser = Console.ReadLine();
+                if (Int16.TryParse(inputFromUser, out Int16 notUserValue) )
+                {
+                        int inputFromUserAsInt = Convert.ToInt16(inputFromUser);
+                    option = inputFromUserAsInt; 
+                }
+
+                else
+                {
+                    Console.WriteLine("Użytkownik bodał błędne dane");
+                }
 
                 switch (option)
                 {
